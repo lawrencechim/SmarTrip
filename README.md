@@ -1,4 +1,4 @@
 # TripNow
 Capstone project at Galvanize
 
-This is smart trip planner for you to start your trip today
+This is a smart trip planner for you to start your trip today
