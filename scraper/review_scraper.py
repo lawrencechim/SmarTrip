@@ -28,11 +28,12 @@ def get_review_info(attraction_names,attraction_urls,filepath,filename):
         except:
             total_reviewpages = 1
         total_reviewpages = int(total_reviewpages)
+        ## to get max of 400 reviews for each attraction 
         # if total_reviewpages > 40:
         #     total_reviewpages = 40
         # else:
         #     total_reviewpages = total_reviewpages
-        # print 'total_reviewpages is ', total_reviewpages
+        ## print 'total_reviewpages is ', total_reviewpages
         try:
             for num in xrange(total_reviewpages):
                 urlr = baseurl + attraction_urls[i].split('Reviews')[0]+'reviews-or'+str(num*10)

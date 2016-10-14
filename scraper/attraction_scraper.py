@@ -62,7 +62,10 @@ def get_attraction_info(attraction_names,attraction_urls,filepath,filename):
 
         try:
             description = soup.select('div.listing_details')[0].find('p').text
-            attraction['description'] = description
+            if attraction['category'] != None:
+                attraction['description'] = attraction_names[i] +' is '+ attraction['category'] + ' ' + description
+            else:
+                attraction['description'] = attraction_names[i] + ' ' + description
         except:
             if attraction['category'] != None:
                 attraction['description'] = attraction_names[i] +' is '+ attraction['category']
@@ -97,5 +100,5 @@ if __name__ == '__main__':
     print 'attractions collected'
     # attraction_names = attraction_names[:30]
     # attraction_urls = attraction_urls[:30]
-    filename = 'sf_attractions_info.json'
+    filename = 'sf_attractions_info_final.json'
     get_attraction_info(attraction_names,attraction_urls,filepath,filename)
