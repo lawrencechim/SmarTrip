@@ -54,6 +54,11 @@ Final recommendation model was built with two type of choices for users:
 * scikit learn
 * graphlab
 
+#### Machine learning
+* Natural language processing
+* Recommender system
+* TFIDF, NMF, LDA
+
 #### Data visualization:
 
 * matplotlib
@@ -63,8 +68,8 @@ Final recommendation model was built with two type of choices for users:
 
 #### Web App:
 
-* flask
-* bootstrap
+* Flask
+* Bootstrap
 * html
 * css
 * JavaScript
