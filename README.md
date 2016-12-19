@@ -14,7 +14,8 @@ Attraction descriptions are scraped from TripAdvisor, NaN data are filled with a
 ![Topic modeling](images/topic_modeling.png)
 
 Results were evaluated by calculating the cosine similarity matrix (scikit-learn linear_kernel) and manual filtering. NMF gives best results here and chosen as the final model.
-![Cosine similarity](images/cosine_similarity.png)
+
+<img src="images/cosine_similarity.png" alt="Drawing" style="width: 350px;"/>
 
 Address data were collected, NaN rows were dropped, latitude and longitude data were obtained from google geocoder with the addresses, and distance matrix were calculated.
 
