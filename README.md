@@ -17,9 +17,9 @@ Here are the example results from the most popular attractions in SF, their scor
 
 Results were evaluated by calculating the cosine similarity matrix (scikit-learn linear_kernel) and manual filtering. NMF gives best results here and chosen as the final model. The following image shows that attractions within same topic have much higher cosine similarity than from different a topic:  
 
-<!-- ![](images/cosine_similarity.png) -->
+![](images/cosine-similarity.png)
 
-<img src="images/cosine_similarity.png" alt="Drawing" style="width: 300px;"/>
+<!-- <img src="images/cosine_similarity.png" alt="Drawing" style="width: 300px;"/> -->
 
 Address data were collected, NaN rows were dropped, latitude and longitude data were obtained from google geocoder with the addresses, and distance matrix were calculated.
 
